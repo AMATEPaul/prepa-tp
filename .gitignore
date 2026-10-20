@@ -1,0 +1,13 @@
+# Seuls les fichiers du skill sont versionnés : sujets, photos et
+# préparations personnelles restent en local.
+/*
+!/.gitignore
+!/.gitattributes
+!/SKILL.md
+!/README.md
+!/references/
+!/exemples/
+!/modele/
+!/outils/
+*.tmp
+~$*
