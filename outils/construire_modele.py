@@ -93,6 +93,8 @@ AJOUTES = [
                f'<w:i/><w:color w:val="{GRIS}"/><w:sz w:val="19"/><w:szCs w:val="19"/>'),
     paragraphe("Piste", "Piste", '<w:spacing w:before="20" w:after="40"/><w:ind w:left="1247"/>',
                f'<w:i/><w:color w:val="{GRIS}"/><w:sz w:val="20"/><w:szCs w:val="20"/>'),
+    paragraphe("Separateur", "Separateur", '<w:spacing w:before="0" w:after="0" w:line="40" w:lineRule="exact"/>',
+               '<w:sz w:val="2"/><w:szCs w:val="2"/>'),
     '<w:style w:type="character" w:customStyle="1" w:styleId="Rouge"><w:name w:val="Rouge"/>'
     f'<w:basedOn w:val="DefaultParagraphFont"/><w:qFormat/><w:rPr><w:color w:val="{ROUGE}"/></w:rPr></w:style>',
 ]

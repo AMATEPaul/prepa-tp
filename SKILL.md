@@ -128,6 +128,7 @@ Règles de saisie :
 - Les lignes `::: c` sont **entièrement en maths** (un ou plusieurs `$…$` séparés d'espaces) : le texte va dans `\text{…}`, l'unité aussi (`\ldots\ \text{V}`). Sinon Word rapetisse les fractions.
 - Virgule décimale : `0{,}7`. Fractions : `\dfrac{}{}`. Valeur à mesurer : `\ldots`. Implication : `\Rightarrow`. Espace large : `\qquad`.
 - Hors calculs, les `$…$` restent courts (grandeur, petite égalité).
+- Tableaux : en-têtes courts et sans `$…$`. Dès qu'une ligne du tableau est longue, pandoc fixe la largeur des colonnes d'après le nombre de tirets de la ligne `|:---:|` : mettre dans chaque colonne au moins autant de tirets que son texte le plus long, sinon une colonne s'écrase.
 
 ## 4. Convertir en Word
 

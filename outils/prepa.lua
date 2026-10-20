@@ -38,6 +38,10 @@ local function decouper(inlines)
   return paras
 end
 
+-- Encadrés : Word fusionne deux encadrés qui se suivent, on les sépare
+-- par un paragraphe minuscule.
+local ENCADRES = { capture = true, schema = true }
+
 function Div(div)
   for classe, style in pairs(STYLES) do
     if div.classes:includes(classe) then
@@ -50,6 +54,9 @@ function Div(div)
         else
           blocs:insert(bloc)
         end
+      end
+      if ENCADRES[classe] then
+        blocs:insert(pandoc.Div({ pandoc.Para({ pandoc.Str("\u{200B}") }) }, { ["custom-style"] = "Separateur" }))
       end
       return blocs
     end
